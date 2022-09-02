@@ -1,25 +1,51 @@
 <!DOCTYPE html>
-<html lang="pt">
+<html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Meu primeiro formulário</title>
+    <link rel="stylesheet" href="login.css">
+    <title>Login</title>
 </head>
+
 <body>
-    <h3>Meu primeiro form</h3>
-        <form action="" name = form1>
-            <label for="">Nome: </label><br>
-            <input type="text" name="nome" size="40" maxlength="40"><br><br>
-            <label for="">Idade: </label><br>
-            <input type="text" name="idade"><br>
-            <label for="">Telefone: </label><br>
-            <input type="text" name="telefone"><br>
-            <label for="">Minha redação</label>
-            <textarea name="redacao" cols="30" rows="10">
-            </textarea><br><br>
-            <input type="submit" value="Cadastrar">
-                <input type="reset" value="limpar">
-        </form>
+    <div class="header">
+        <div class="logo">
+            <a href="#">
+                <img src="/img/logo.png" alt="">
+            </a>
+        </div>
+    </div>
+
+    <div class="login_body">
+        <div class="login_box">
+            <h2>Entrar</h2>
+            <form method="post" action="login.php">
+                <div class="input_box">
+                    <input required type="email" placeholder="Email ou número de telefone" id="email" name="email">
+                </div>
+
+                <div class="input_box">
+                    <input required type="password" placeholder="Senha" id="email" name="senha">
+                </div>
+
+                <div>
+                    <input type="submit" value="entrar">
+                </div>
+            </form>
+            </div>
+
+            <div class="login_footer">
+                
+
+                <div class="sign_up">
+                    <p>Novo por aqui? <a href="cadastro.html">Cadastre-se.</a></p>
+                </div>
+
+            </div>
+        </div>
+    </div>
 </body>
+
 </html>
